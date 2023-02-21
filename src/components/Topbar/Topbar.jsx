@@ -1,6 +1,6 @@
 import "./Topbar.scss";
-import PersonIcon from "@mui/icons-material/Person";
-import MailIcon from "@mui/icons-material/Mail";
+// import PersonIcon from "@mui/icons-material/Person";
+// import MailIcon from "@mui/icons-material/Mail";
 
 const Topbar = ({ isOpen, setIsOpen }) => {
   return (
@@ -10,14 +10,14 @@ const Topbar = ({ isOpen, setIsOpen }) => {
           <a href="#intro" className="logo">
             KB
           </a>
-          <div className="itemContainer">
+          {/* <div className="itemContainer">
             <PersonIcon className="icon" />
             <span>Tel: 07494 00 00 00</span>
           </div>
           <div className="itemContainer">
             <MailIcon className="icon" />
-            <span>Mail: kemal@genius.com</span>
-          </div>
+            <span>Mail: kbekir.work@gmail.com</span>
+          </div> */}
         </div>
         <div className="right">
           <div className="hamburger" onClick={() => setIsOpen(!isOpen)} >

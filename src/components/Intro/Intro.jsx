@@ -1,6 +1,8 @@
 import "./Intro.scss";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 export default function Intro() {
   const textRef = useRef();
@@ -10,7 +12,7 @@ export default function Intro() {
       showCursor: true,
       backDelay: 1500,
       backSpeed: 60,
-      strings: ["Developer",],
+      strings: ["Developer"],
     });
   }, []);
 
@@ -28,6 +30,15 @@ export default function Intro() {
           <h3>
             Junior <span ref={textRef}></span>
           </h3>
+          <div className="socials">
+            <a className="link" href="https://github.com/KemalBekir">
+              <GitHubIcon className="icon" />
+            </a>
+
+            <a className="link" href="https://www.linkedin.com/in/kemal-bekir-900126267/">
+              <LinkedInIcon className="icon" />
+            </a>
+          </div>
         </div>
         <a href="#portfolio">
           <img src="assets/down.png" alt="down arrow" />
