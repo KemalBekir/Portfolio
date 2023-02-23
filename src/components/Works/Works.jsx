@@ -25,6 +25,21 @@ export default function Works() {
       desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       img: "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
     },
+    // {
+    //   id: "4",
+    //   icon: "./assets/mobile.png",
+    //   title: "Something",
+    //   desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+    //   img: "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
+    // },
+    // {
+    //   id: "5",
+    //   icon: "./assets/globe.png",
+    //   title: "Something 2",
+    //   desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    //   img: "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+    // },
+  
   ];
 
   const handleClick = (way) => {
@@ -50,6 +65,14 @@ export default function Works() {
                   <h2>{d.title}</h2>
                   <p>{d.desc}</p>
                   <span>Projects</span>
+                  <div className="source">
+                    <a className="link" href="https://github.com/KemalBekir">
+                      Source Code
+                    </a>
+                    <a className="link" href="_blank">
+                      Live Demo
+                    </a>
+                  </div>
                 </div>
               </div>
               <div className="right">

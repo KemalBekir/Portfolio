@@ -1,10 +1,10 @@
-@import '../../Global.scss';
+@import "../../Global.scss";
 
 .intro {
   background-color: white;
   display: flex;
 
-  @include mobile{
+  @include mobile {
     flex-direction: column;
     align-items: center;
   }
@@ -16,21 +16,21 @@
     .imgContainer {
       width: 700px;
       height: 700px;
-      background-color: crimson;
+      background-color: rgb(84, 195, 255);
       border-radius: 50%;
       display: flex;
       align-items: flex-end;
       justify-content: center;
       float: right;
 
-      @include mobile{
+      @include mobile {
         align-items: flex-start;
       }
 
       img {
         height: 90%;
 
-        @include mobile{
+        @include mobile {
           height: 50%;
         }
       }
@@ -48,7 +48,7 @@
       flex-direction: column;
       justify-content: center;
 
-      @include mobile{
+      @include mobile {
         padding-left: 0;
         align-items: center;
       }
@@ -57,7 +57,7 @@
         font-size: 60px;
         margin: 10px 0;
 
-        @include mobile{
+        @include mobile {
           font-size: 40px;
         }
       }
@@ -66,8 +66,8 @@
       }
       h3 {
         font-size: 30px;
-        
-        @include mobile{
+
+        @include mobile {
           font-size: 20px;
         }
 
@@ -94,19 +94,18 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
-        margin-top: 25px;
+        margin: 25px 0;
         width: 50%;
 
-        
-        @include mobile{
+        @include mobile {
           width: 60%;
         }
 
-        .link{
+        .link {
           position: inherit;
         }
 
-        .icon{
+        .icon {
           font-size: 60px;
           color: $mainColor;
           cursor: pointer;
