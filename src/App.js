@@ -20,8 +20,8 @@ function App() {
         <Porftolio />
         <Works />
         <Technologies/>
-        {/* <Testimonials /> */}
-        <Contact />
+        <Testimonials />
+        {/* <Contact /> */}
       </div>
     </div>
   );

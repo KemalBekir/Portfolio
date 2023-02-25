@@ -2,7 +2,7 @@ import "./Technologies.scss";
 
 export default function Technologies() {
   return (
-    <div className="tech">
+    <div className="tech" id="technologies">
       <h1>Technologies</h1>
       <div className="container">
         <ul className="list">

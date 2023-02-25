@@ -12,6 +12,7 @@
 
   h1 {
     font-size: 50px;
+    margin-bottom: 15px;
 
     @include mobile {
       font-size: 20px;
@@ -19,31 +20,35 @@
   }
 
   .container {
-    width: 100%;
+    width: 80%;
     height: 80%;
+    gap: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
 
     @include mobile {
       flex-direction: column;
       height: 100%;
     }
 
+  
+
     .card {
       width: 250px;
-      height: 70%;
+      height: 48%;
       border-radius: 10px;
       box-shadow: 0px 0px 15px -8px black;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      padding: 20px;
       transition: all 1s ease;
 
       @include mobile {
         height: 180px;
-        margin: 10px 0 ;
+        margin: 10px 0;
       }
 
       &.featured {
@@ -60,6 +65,15 @@
 
       &:hover {
         transform: scale(1.1);
+      }
+
+      a {
+        overflow: hidden;
+      }
+
+      .certificate {
+        width: 100%;
+        height: 100%;
       }
 
       .top {
@@ -96,7 +110,6 @@
           font-size: 12px;
           padding: 5px;
         }
-
       }
 
       .bottom {
@@ -111,7 +124,6 @@
           @include mobile {
             font-size: 14px;
           }
-
         }
 
         h4 {
@@ -120,7 +132,6 @@
           @include mobile {
             font-size: 13px;
           }
-
         }
       }
     }
