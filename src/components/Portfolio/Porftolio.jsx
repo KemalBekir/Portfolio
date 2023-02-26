@@ -12,6 +12,8 @@ import "./Portfolio.scss";
 export default function Porftolio() {
   const [selected, setSelected] = useState("featured");
   const [data, setData] = useState([]);
+
+  //TODO - Change for my projects
   const list = [
     {
       id: "featured",

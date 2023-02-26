@@ -1,6 +1,11 @@
-import "./Testimonials.scss";
+import { useState } from "react";
+import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+import "./Certificates.scss";
 
 export default function Testimonials() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
   const data = [
     {
       id: 1,
@@ -87,32 +92,41 @@ export default function Testimonials() {
       // desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem",
     },
   ];
+
+  const handleClick = (way) => {
+    way === "left"
+      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 7)
+      : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
+  };
+
   return (
-    <div className="testimonials" id="certificates">
+    <div className="certificates" id="certificates">
       <h1>Certificates</h1>
-      <div className="container">
+      <div
+        className="slider"
+        style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
+      >
         {data.map((d) => (
-          <div className={d.featured ? "card featured" : "card"} key={d.id}>
-            <a href={d.link} target="_blank" rel="noreferrer noopener">
-              <img
-                src={d.link}
-                alt="certificate"
-                className="certificate"
-              />
-            </a>
-            {/* <div className="top">
-              <img src="assets/right-arrow.png" alt="" className="left" />
-              <img src={d.img} alt="" className="user" />
-              <img src={d.icon} alt="" className="right" />
+          <div className="container" key={d.id}>
+            <div className="item">
+              <div className="left">
+                <div className="leftContainer">
+                  <div className="imgContainer">
+                    <a href={d.link} target='_blank' rel="noreferrer">
+                      <img src={d.img} alt="certificate from SoftUni" />
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="center">{d.desc}</div>
-            <div className="bottom">
-              <h3>{d.name}</h3>
-              <h4>{d.title}</h4>
-            </div> */}
           </div>
         ))}
       </div>
+      <ChevronLeftIcon
+        className="arrow left"
+        onClick={() => handleClick("left")}
+      />
+      <ChevronRightIcon className="arrow right" onClick={() => handleClick()} />
     </div>
   );
 }

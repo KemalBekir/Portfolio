@@ -20,6 +20,7 @@ export default function Intro() {
     <div className="intro" id="intro">
       <div className="left">
         <div className="imgContainer">
+          {/* TODO - Change picture for one of my own */}
           <img src="assets/man.png" alt="man" />
         </div>
       </div>

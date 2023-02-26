@@ -1,11 +1,11 @@
 import { useState } from "react";
 import "./App.scss";
-import Contact from "./components/Contact/Contact";
+// import Contact from "./components/Contact/Contact";
 import Intro from "./components/Intro/Intro";
 import Menu from "./components/Menu/Menu";
 import Porftolio from "./components/Portfolio/Porftolio";
 import Technologies from "./components/Technologies/Technologies";
-import Testimonials from "./components/Testimonials/Testimonials";
+import Certificates from "./components/Certificates/Certificates";
 import Topbar from "./components/Topbar/Topbar";
 import Works from "./components/Works/Works";
 
@@ -20,7 +20,7 @@ function App() {
         <Porftolio />
         <Works />
         <Technologies/>
-        <Testimonials />
+        <Certificates />
         {/* <Contact /> */}
       </div>
     </div>

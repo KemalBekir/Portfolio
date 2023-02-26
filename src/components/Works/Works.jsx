@@ -3,6 +3,8 @@ import "./Works.scss";
 
 export default function Works() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  
+  //TODO - Change for my projects
   const data = [
     {
       id: "1",
@@ -60,7 +62,7 @@ export default function Works() {
               <div className="left">
                 <div className="leftContainer">
                   <div className="imgContainer">
-                    <img src={d.icon} alt="mobile phone" />
+                    <img src={d.icon} alt="icon" />
                   </div>
                   <h2>{d.title}</h2>
                   <p>{d.desc}</p>
