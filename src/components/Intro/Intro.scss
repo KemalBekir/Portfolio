@@ -23,19 +23,24 @@
       justify-content: center;
       float: right;
       position: relative;
+      overflow: hidden;
+
 
       @include mobile {
         align-items: flex-start;
       }
 
       img {
-        height: 90%;
+        height: 100%;
+        scale: 1.7;
+        transform:translate(45px, 35px);
 
         @include mobile {
-          height: 65%;
+          height: 100%;
           position: absolute;
-          left: 21%;
-          bottom: 32%;
+          left: 17%;
+          bottom: 20%;
+          scale: 1.8;
         }
       }
     }

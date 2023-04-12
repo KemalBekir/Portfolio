@@ -21,7 +21,7 @@ export default function Intro() {
       <div className="left">
         <div className="imgContainer">
           {/* TODO - Change picture for one of my own */}
-          <img src="assets/man.png" alt="man" />
+          <img src="assets/MeGalata.jpg" alt="man" />
         </div>
       </div>
       <div className="right">
