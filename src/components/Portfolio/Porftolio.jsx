@@ -10,31 +10,31 @@ import {
 import "./Portfolio.scss";
 
 export default function Porftolio() {
-  const [selected, setSelected] = useState("featured");
+  const [selected, setSelected] = useState("web");
   const [data, setData] = useState([]);
 
   //TODO - Change for my projects
   const list = [
-    {
-      id: "featured",
-      title: "Featured",
-    },
+    // {
+    //   id: "featured",
+    //   title: "Featured",
+    // },
     {
       id: "web",
       title: "Web App",
     },
-    {
-      id: "mobile",
-      title: "Mobile App",
-    },
-    {
-      id: "design",
-      title: "Design",
-    },
-    {
-      id: "content",
-      title: "Content",
-    },
+    // {
+    //   id: "mobile",
+    //   title: "Mobile App",
+    // },
+    // {
+    //   id: "design",
+    //   title: "Design",
+    // },
+    // {
+    //   id: "content",
+    //   title: "Content",
+    // },
   ];
 
   useEffect(() => {

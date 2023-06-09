@@ -3,22 +3,26 @@ import "./Works.scss";
 
 export default function Works() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  
+
   //TODO - Change for my projects
   const data = [
     {
       id: "1",
       icon: "./assets/mobile.png",
-      title: "Web Design",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
-      img: "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
+      title: "Cake Shop",
+      desc: "Custom made cakes for every occasion",
+      img: "https://github.com/KemalBekir/CakeShop/blob/main/Screenshots/Desktop/2.jpg?raw=true",
+      url: "https://cakeshop-ej4v.onrender.com/",
+      github: 'https://github.com/KemalBekir/CakeShop',
     },
     {
       id: "2",
       icon: "./assets/globe.png",
-      title: "Mobile Application",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      img: "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+      title: "Airbnb Clone",
+      desc: "Airbnb Clone using Next13, tailwind, prismadb, typescript",
+      img: "https://github.com/KemalBekir/airbnb-clone/blob/main/screenshots/1.jpg?raw=true",
+      url: 'https://nestaway.vercel.app/',
+      github:'https://github.com/KemalBekir/airbnb-clone',
     },
     {
       id: "3",
@@ -41,7 +45,6 @@ export default function Works() {
     //   desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     //   img: "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
     // },
-  
   ];
 
   const handleClick = (way) => {
@@ -68,10 +71,10 @@ export default function Works() {
                   <p>{d.desc}</p>
                   <span>Projects</span>
                   <div className="source">
-                    <a className="link" href="https://github.com/KemalBekir">
+                    <a className="link" href={d.github}>
                       Source Code
                     </a>
-                    <a className="link" href="_blank">
+                    <a className="link" href={d.url}>
                       Live Demo
                     </a>
                   </div>
