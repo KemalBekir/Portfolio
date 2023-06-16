@@ -27,9 +27,11 @@ export default function Works() {
     {
       id: "3",
       icon: "./assets/writing.png",
-      title: "Branding",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      title: "In progress",
+      desc: "In progress",
       img: "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+      url:'',
+      github: 'https://github.com/KemalBekir/PriceTracker'
     },
     // {
     //   id: "4",
