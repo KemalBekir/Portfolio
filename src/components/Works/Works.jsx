@@ -19,7 +19,7 @@ export default function Works() {
       id: "2",
       icon: "./assets/globe.png",
       title: "Airbnb Clone",
-      desc: "Airbnb Clone using Next13, tailwind, prismadb, typescript",
+      desc: "Airbnb Clone using Next13, Tailwind, Prismadb, Typescript",
       img: "https://github.com/KemalBekir/airbnb-clone/blob/main/screenshots/1.jpg?raw=true",
       url: 'https://nestaway.vercel.app/',
       github:'https://github.com/KemalBekir/airbnb-clone',
@@ -27,12 +27,21 @@ export default function Works() {
     {
       id: "3",
       icon: "./assets/writing.png",
-      title: "In progress",
-      desc: "In progress",
-      img: "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
-      url:'',
-      github: 'https://github.com/KemalBekir/PriceTracker'
+      title: "AutoGo",
+      desc: "Car rental using Next13. Tailwind",
+      img: "https://github.com/KemalBekir/AutoGo/blob/main/screenshots/1.png?raw=true",
+      url:'https://auto-go-nu.vercel.app/',
+      github: 'https://github.com/KemalBekir/AutoGo/tree/main'
     },
+    {
+      id: "4",
+      icon: "./assets/globe.png",
+      title: "PriceTracker",
+      desc: "Track items prices on Amazon - React,Tailwind,TypeScript,Node Cron, Puppeteer, Express, MongoDB, JWT",
+      img: "https://github.com/KemalBekir/PriceTracker/blob/main/Screenshots/1.png?raw=true",
+      url: "https://pricetracker-ak2h.onrender.com/",
+      github: "https://github.com/KemalBekir/PriceTracker"
+    }
     // {
     //   id: "4",
     //   icon: "./assets/mobile.png",

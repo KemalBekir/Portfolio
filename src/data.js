@@ -47,11 +47,16 @@ export const webPortfolio = [
     title: "Cake Shop",
     img: "https://github.com/KemalBekir/CakeShop/blob/main/Screenshots/Desktop/1.jpg?raw=true",
   },
-  // {
-  //   id: 4,
-  //   title: "Web Relax App",
-  //   img: "https://cdn.dribbble.com/users/2264844/screenshots/15463998/media/d85e92a332c41094f68e1f716884f7ce.jpg?compress=1&resize=1200x900",
-  // },
+  {
+    id: 4,
+    title: "AutoGo",
+    img: "https://github.com/KemalBekir/AutoGo/blob/main/screenshots/1.png?raw=true",
+  },
+  {
+    id: 5,
+    title: "PriceTracker",
+    img: "https://github.com/KemalBekir/PriceTracker/blob/main/Screenshots/1.png?raw=true"
+  }
   // {
   //   id: 5,
   //   title: "Web Design",
